@@ -1,6 +1,6 @@
 import logo from './logo.svg';
 import './App.css';
-import pulp from './pulpfiction.jpg';
+import pulp from './movie/pulpfiction.jpg';
 
 function Header(props){
   return(
@@ -52,6 +52,15 @@ function Footer(props){
   )
 }
 
+function Button(props){
+  return(
+    <button className = "GO!">
+      {props.click}
+      
+    </button>
+  )
+}
+
 const movies = [
   "T2",
   "Pulp Fiction",
@@ -68,6 +77,7 @@ function App() {
       <Header name = "Raiden"/>
       <Page text = "To cook mid-rare"/>
       <Image image = "this is an image..."/>
+      <Button click = "wow"/>
       <Movies movies={movieObjects}/>
       <Footer date = {new Date().getFullYear()}/>
       
