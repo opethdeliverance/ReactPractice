@@ -8,7 +8,7 @@ import reportWebVitals from './reportWebVitals';
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <>
-  <App2 authorized={false}/>
+  <App2/>
   {/* <App/> */}
   </>
   //React.createElement("h1", {style: {color: "red"}}, "I'll be right back")
